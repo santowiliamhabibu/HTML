@@ -4,6 +4,10 @@ html{
     width: 100%;
 
 }
+section{
+    height: 100vh;
+    border: solid red;
+}
 body{
     margin: 0;
     padding: 0;
@@ -17,17 +21,25 @@ body{
 .logo{
     float: left;
     margin-left: 46px;
+    margin-top: 15px;
     padding: 0px 38px;
     font-family: 'Times New Roman', Times, serif;
     font-size: 25px;
     font-weight: bold;
     box-shadow: 0 0 0 black;
 }
-.logo a{
+.logo span{
     text-decoration: none;
     color: aliceblue;
     text-shadow:1px 1px 1px 0 white;
-    
+    font-size: 50px;
+
+
+}
+.logo a p{
+    margin-bottom: 30px;
+    font-size: 50px;
+    transform: translateY(-41px);
 }
 .nav{
     position: absolute;
@@ -55,6 +67,9 @@ body{
     background-color: white;
     text-shadow: 1px 1px 1px black;
 }
+.nav ul li a{
+    text-decoration: none;
+}
 .nav ul li:hover{
     border-bottom: 3px solid #0000;
     transition: all .3s ease;
@@ -66,14 +81,13 @@ body{
     left: 72%;
     transform: translate(-50%, -50%);
 }
-.header h1 {
+.header span {
     color: green;
     text-align: left;
     font-family: 'Times New Roman', Times, serif;
+    font-size: 30px;
 }
-.header span{
-    color: red;
-}
+
 .content-header{
     position: absolute;
     transform: translate(-50%, -50%);
@@ -86,7 +100,6 @@ body{
     font-family: 'Times New Roman', Times, serif;
     font-size: 16px;
     text-align: left;
-    color: #08596a;
 }
 .text {
     width: 205px;
@@ -139,3 +152,4 @@ input[type="text"]:focus {
 .col-img img {
     width: 70%;
 }
+
